@@ -50,8 +50,9 @@
   /* ======================
      TYPOGRAPHY
   ====================== */
-  --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Montserrat', serif;
+  --font-body: "Montserrat Alternates", sans-serif;
+  
 }
 
 
@@ -71,11 +72,19 @@ body {
   min-height: 100svh;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--color-primary);
-  line-height: 1.2;
+  line-height: 1;
 }
 
 h1 { font-size: clamp(2.25rem, 1.5rem + 4vw, 4.5rem); }
@@ -89,21 +98,27 @@ p {
   font-size: clamp(0.9rem, 0.85rem + 0.5vw, 1rem);
 }
 
+svg{transition: all 200ms ease-in-out;}
+
 
 /* Backgrounds */
 .bg-primary { background: var(--color-primary); }
 .bg-secondary { background: var(--color-secondary); }
-.bg-surface { background: var(--color-surface); }
+.bg-surface { background: var( --color-bg); }
+.bg-light { background: var(--color-bg); }
 .bg-success { background: var(--color-success); }
 .bg-success-light { background: var(--color-success-light); }
 .bg-white { background: var(--white); }
 
 /* Text */
 .text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--color-secondary); }
 .text-muted { color: var(--text-muted); }
 .text-inverse { color: var(--text-inverse); }
 .text-accent { color: var(--color-primary); }
 .text-success { color: var(--color-success); }
+
+.border { border: 5px solid var(--color-primary); }
 
 
 /* =====================
@@ -115,6 +130,7 @@ p {
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
 .flex-row { flex-direction: row; }
+.flex-1 { flex: 1; }
 
 .items-center { align-items: center; }
 .items-start { align-items: flex-start; }
@@ -128,6 +144,26 @@ p {
 
 .w-full { width: 100%; }
 .h-full { height: 100%; }
+.h-screen { min-height: 100svh; }
+
+
+
+
+/* 
+    ===================
+    TEXT UTILITIES
+    =====================
+ */
+
+ .text-start{text-align: start;}
+ .text-center{text-align: center;}
+ .text-end{text-align: end;}
+
+ .fw400{font-weight: 400;}
+ .fw500{font-weight: 500;}
+ .fw700{font-weight: 700;}
+
+
 
 
 
@@ -136,6 +172,10 @@ p {
     COMPONENT UTILITIES
     =====================
  */
+
+ .logo{
+   width: clamp(50px, 6vw, 80px);
+ }
 
 
 .container {
@@ -146,11 +186,16 @@ p {
 
 .btn {
   padding: 0.75rem 1.25rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
   border: none;
   cursor: pointer;
   font-weight: 600;
   transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  margin: .25em 0;
 }
 
 .btn-primary {
