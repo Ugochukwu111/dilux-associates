@@ -39,7 +39,21 @@ The admin has full control over associates, land listings, and verification proc
 ---
 
 ## 📁 Project Structure
-<!-- project structure goes in here -->
+```text
+root/
+├── public/              # Static assets (favicons,)
+├── src/                 # Main application source
+│   ├── assets/          # Images (dilux-logo.png, icons etc)
+│   ├── Components/      # Reusable UI pieces
+│   │   ├── AuthLayout/        # SignIn and SignUp Layout util
+│   ├── Pages/           # Full page views
+|   |    ├──Admin/      
+|   |    ├──Forms/       #SignIn SignUp page   
+│   ├── App.jsx          # Component tree
+│   └── main.jsx         # Entry point & Routing
+├── .gitignore           # Files to ignore in Git
+├── package.json         # Dependencies and scripts
+└── README.md            # You are here!
 
 ## installation & setup
 
