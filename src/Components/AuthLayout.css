@@ -1,0 +1,25 @@
+.auth-layout-container{
+  background: linear-gradient(
+  135deg,
+  #733939 0%,
+  #8a4a4a 35%,
+  #d3a23e 100%
+);
+padding: 0;/**override default padding from utl class container*/
+}
+
+.auth-layout-container > div{
+  padding: clamp(12px, 3vw, 40px);
+
+}
+
+.auth-layout-container ul {
+  list-style: none;
+  gap: 1rem;
+}
+
+@media (max-width: 730px) {
+   .auth-layout-container .left-container{
+    display: none;
+   }
+}

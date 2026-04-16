@@ -1,0 +1,56 @@
+.auth-layout-container form{
+  box-shadow: 1px 1.5px 10px var(--text-muted);
+  border-radius: 1rem;
+  padding: clamp(.8em , 6vw, 2em);
+  max-width: 500px;
+
+  background: rgba(255, 255, 255, 0.85); 
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+}
+
+.auth-layout-container .input-wrapper > div{
+  margin: .5em 0;
+}
+
+.auth-layout-container .input-container{
+  position: relative;
+  display: grid;
+}
+
+.auth-layout-container .input-container svg{
+  position: absolute;
+  right: 1em;
+  top: 1.75em;
+  color: var(--text-muted);
+  display: grid;
+  place-self: center;
+}
+
+.auth-layout-container .input-wrapper label{
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.auth-layout-container .input-wrapper input{
+  padding: .8em 1.5em;
+  border-radius: .5rem;
+  border: .5px solid var(--text-muted);
+  outline: .5px solid transparent;
+  transition: all 200ms ease-in-out;
+}
+
+/* highlight svg icons when user starts typing */
+.auth-layout-container .input-wrapper input:not(:placeholder-shown) +  svg{
+  color: var(--color-primary);
+}
+
+.auth-layout-container .input-wrapper input:focus{
+  outline: .5px solid var(--color-primary);
+   border: .5px solid var(--color-primary);
+}
+
+.auth-layout-container #submit-btn{
+  width: 100%;
+}
