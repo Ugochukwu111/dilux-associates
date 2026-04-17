@@ -18,6 +18,7 @@
   --text-primary: #222222;
   --text-muted: #cdcccc;
   --text-inverse: #FFFFFF;
+  --text-fail: red;
 
   /* ======================
      STATUS COLORS
@@ -117,6 +118,7 @@ svg{transition: all 200ms ease-in-out;}
 .text-inverse { color: var(--text-inverse); }
 .text-accent { color: var(--color-primary); }
 .text-success { color: var(--color-success); }
+.text-fail{color: var(--text-fail);}
 
 .border { border: 5px solid var(--color-primary); }
 
