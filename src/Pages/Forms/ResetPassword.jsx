@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { Lock, SendHorizontal } from "lucide-react";
 
 import AuthLayout from "../../Components/AuthLayout.jsx";
+import redLogo from '../../assets/logo.png';
+
+
 import "./Forms.css";
 
 const businessName = import.meta.env.VITE_BUSINESS_NAME;
@@ -105,6 +108,9 @@ export default function ResetPassword() {
       tagline={`Create a new password to regain access to your ${businessName}  account.`}
     >
       <form onSubmit={handleSubmit}>
+        <figure className="logo">
+          <img src={redLogo} alt={`${businessName} logo`} />
+        </figure>
         <h3 className="text-center">Set New Password</h3>
         <p className="text-center text-muted">
           Choose a strong password to secure your account.
@@ -115,9 +121,7 @@ export default function ResetPassword() {
           <div className="flex flex-col input-container">
             <div className="flex justify-between items-center">
               <label htmlFor="password">New Password</label>
-              <span className="errorMsg text-fail">
-                {errorMgs.password}
-              </span>
+              <span className="errorMsg text-fail">{errorMgs.password}</span>
             </div>
             <input
               type="password"

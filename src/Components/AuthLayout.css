@@ -6,6 +6,7 @@
   #d3a23e 100%
 );
 padding: 0;/**override default padding from utl class container*/
+overflow: hidden;
 }
 
 .auth-layout-container > div{
@@ -21,5 +22,53 @@ padding: 0;/**override default padding from utl class container*/
 @media (max-width: 730px) {
    .auth-layout-container .left-container{
     display: none;
+    overflow: hidden;
    }
+}
+
+.auth-layout-container h2{
+  animation: float 4s linear infinite;
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(3px);
+  }25%{
+    transform: translateY(6px);
+  }50%{
+     transform: translateY(9px);
+  }75%{
+    transform: translateY(6px);
+  }100%{
+     transform: translateY(3px);
+  }
+}
+
+.auth-layout-container .tagline{
+ animation: slideUp 1s linear;
+}
+
+@keyframes slideUp1 {
+  0%{
+     transform: translateY(100px);
+     opacity: .7;
+  }100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+.auth-layout-container .second-tagline{
+ animation: slideUp 1.3s linear;
+}
+
+@keyframes slideUp {
+  0%{
+     transform: translateY(100px);
+     opacity: .7;
+  }100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

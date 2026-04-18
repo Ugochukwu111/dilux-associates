@@ -4,6 +4,8 @@ import { Lock, Mail, Phone, SendHorizontal } from "lucide-react";
 import AuthLayout from "../../Components/AuthLayout.jsx";
 import "./Forms.css";
 
+import redLogo from '../../assets/logo.png';
+
 const businessName = import.meta.env.VITE_BUSINESS_NAME;
 
 
@@ -173,6 +175,12 @@ export default function SignUp() {
       tagline="Empowering associates with premium land banking opportunities across Nigeria. "
     >
       <form onSubmit={handleSubmit}>
+        <div className="flex items-center justify-center">
+          <figure className="logo">
+            <img src={redLogo} alt={`${businessName} logo`} />
+          </figure>
+        </div>
+        <br />
         <h3 className="text-center">Become an Associate</h3>
         <p className="text-center text-muted">
           Secure your future. Start earning through strategic property

@@ -4,6 +4,8 @@ import { SendHorizontal, RefreshCcw } from "lucide-react";
 import OtpInput from "./OtpInput.jsx";
 
 import AuthLayout from "../../Components/AuthLayout.jsx";
+import redLogo from '../../assets/logo.png';
+
 
 import "./Forms.css";
 
@@ -47,6 +49,9 @@ export default function ConfirmOtp() {
       tagline={`To protect your associate account, we need to verify this login attempt. Please enter the code sent to your email.`}
     >
       <form onSubmit={handleSubmit}>
+        <figure className="logo">
+          <img src={redLogo} alt={`${businessName} logo`} />
+        </figure>
         <h3 className="text-center">Confirm Otp</h3>
         <p className="text-center text-muted">
           Enter the 4-digit code sent to your email address to confirm your

@@ -59,3 +59,32 @@
   font-size: .7rem;
   transition: all 200ms ease;
 }
+
+ .auth-layout-container form .logo{
+  display: none;
+}
+
+.auth-layout-container #submit-btn svg{
+ animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0%{
+    transform: translateX(0px);
+  }25%{
+    transform: translateX(0px);
+  }50%{
+    transform: translateX(0px);
+  }75%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 730px) {
+ .auth-layout-container form .logo{
+  display: flex;
+}
+}

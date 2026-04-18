@@ -20,11 +20,11 @@ export default function AuthLayout({
 
         <div>
           <h2 className='text-inverse'>{heading} {businessName}</h2>
-          <p className='text-secondary'>
+          <p className='text-secondary tagline'>
             {tagline}
           </p>
           <br />
-          <ul className='text-muted'>
+          <ul className='text-muted second-tagline'>
             <li>Join a community of professionals driving the future of real estate</li>
             <li>Your gateway to premium land investments and professional growth starts here.</li>
           </ul>

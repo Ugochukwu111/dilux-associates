@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Lock, Mail, SendHorizontal } from "lucide-react";
 
 import AuthLayout from "../../Components/AuthLayout.jsx";
+import redLogo from '../../assets/logo.png';
+
 
 import "./Forms.css";
 
@@ -93,6 +95,9 @@ export default function SignIn() {
       tagline={`Access your ${businessName} dashboard to manage your listings and track your growth.`}
     >
       <form onSubmit={handleSubmit}>
+        <figure className="logo">
+          <img src={redLogo} alt={`${businessName} logo`} />
+        </figure>
         <h3 className="text-center">Welcome Back</h3>
         <p className="text-center text-muted">
           Enter your credentials to access your associate account
@@ -138,12 +143,12 @@ export default function SignIn() {
         </button>
         <p className="text-center">
           Don't have an Associate account ?
-          <Link to="/sign-in" className="text-primary">
+          <Link to="/sign-up" className="text-primary">
             Sign Up
           </Link>
         </p>
         <p className="text-center">
-          Forgot password  ?
+          Forgot password ?
           <Link to="/reset-password" className="text-primary">
             reset password
           </Link>

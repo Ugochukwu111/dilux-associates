@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Lock, Mail, SendHorizontal } from "lucide-react";
 
 import AuthLayout from "../../Components/AuthLayout.jsx";
+import redLogo from '../../assets/logo.png';
+
 
 import "./Forms.css";
 
@@ -78,6 +80,9 @@ export default function ForgotPassword() {
       tagline={`Regain secure access to your ${businessName} admin account.`}
     >
       <form onSubmit={handleSubmit}>
+        <figure className="logo">
+          <img src={redLogo} alt={`${businessName} logo`} />
+        </figure>
         <h3 className="text-center">Reset Your Password</h3>
         <p className="text-center text-muted">
           Enter your registered admin email and we’ll send you instructions to
