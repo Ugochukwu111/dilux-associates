@@ -45,10 +45,12 @@ root/
 ├── src/                 # Main application source
 │   ├── assets/          # Images (ogo.png, icons etc)
 │   ├── Components/      # Reusable UI pieces
+|   |    ├── Admin/      AuthLayout component
 │   │    ├── AuthLayout.jsx        # SignIn and SignUp Layout util
 │   ├── Pages/           # Full page views
-|   |    ├──Admin/       #AdminSignIn  page
+|   |    ├──Admin/       #AdminSignIn, AdminDashBoard  page
 |   |    ├──Forms/       #SignIn ,SignUp ,OTP, Forget Password , Reset Password pages  
+|   ├── utils/           #GetGreetings.jsx
 │   ├── App.jsx          # Component tree
 │   └── main.jsx         # Entry point & Routing
 ├── .gitignore           # Files to ignore in Git
