@@ -147,6 +147,7 @@ ul{list-style: none;}
 .flex-col { flex-direction: column; }
 .flex-row { flex-direction: row; }
 .flex-1 { flex: 1; }
+.flex-wrap{ flex-wrap: wrap;}
 
 .items-center { align-items: center; }
 .items-start { align-items: flex-start; }
