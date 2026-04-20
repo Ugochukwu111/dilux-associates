@@ -13,18 +13,22 @@ import ForgotPassword from "./Pages/Forms/ForgotPassword";
 import ResetPassword from "./Pages/Forms/ResetPassword";
 import ConfirmOtp from "./Pages/Forms/ConfirmOtp";
 
+
 /*
 =================
 ADMIN PAGES
 =================
  */
 import AdminSignIn from "./Pages/Admin/AdminSignIn";
+import AdminDashBoardPage from "./Pages/Admin/AdminDashBoardPage";
 
 
 function App() {
   return (
     <>
       <Routes>
+        <Route index element={<AdminDashBoardPage />} />
+
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/admin-sign-in" element={<AdminSignIn />} />
