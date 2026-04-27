@@ -1,0 +1,13 @@
+.admin-intelligence-page-navigation ul{
+  /* padding: 0em 1em; */
+}
+
+.admin-intelligence-page-navigation a{
+  text-decoration: none;
+  color: var(--text-muted);
+  padding: 1em 1.5em;
+}
+
+.admin-intelligence-page-navigation a.active{
+    color: 3px solid var(--color-primary);
+}
