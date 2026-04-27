@@ -223,3 +223,30 @@ ul{list-style: none;}
 .btn:hover {
   transform: scale(1.05);
 }
+
+
+/* 
+==============
+COMPONENTS UTILS
+==============
+ */
+
+ /* Dark background */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .modal {
+  background: var(--color-bg);
+  padding: 1em .5em;
+  border-radius: .5rem;
+  width: 100%;
+  max-width:  600px;
+  margin: .5em;
+  min-height: 300px;
+}
