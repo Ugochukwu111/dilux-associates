@@ -1,0 +1,40 @@
+.listing-card{
+  border: .5px solid var(--text-muted);
+  padding: .45em .5em;
+  border-radius: inherit;
+  max-width: 800px;
+  margin: .5em 0;
+}
+
+.listing-card .listing-image{
+  min-width: 250px;
+  border: 2px solid var(--text-muted);
+  border-radius: inherit;
+  min-height: 250px;
+}
+
+.listing-card .listing-name{
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.listing-card .listing-description{
+ margin: .5em 0;
+   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* all children of  listing-documents-container*/
+.listing-card .listing-documents-container >*{
+  border: .5px solid var(--text-muted);
+  padding: .2em .5em;
+  border-radius: .3rem;
+}
+
+@media (max-width: 700px) {
+  .listing-card{
+    flex-direction: column;
+  }
+}
