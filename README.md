@@ -7,6 +7,8 @@ A web application built for **land real estate management** to manage associates
 ## 📌 Project Overview
 This system is designed to help land real estate manage their associates (agents/employees) efficiently. Associates are able to access a personalized dashboard where they can view assigned land properties, upload prospective clients, and track their performance.
 
+> Note: This repository contains the frontend dashboard UI only. Backend services and integrations will be provided in a future repository.
+
 The admin has full control over associates, land listings, and verification processes.
 
 ---
@@ -32,30 +34,66 @@ The admin has full control over associates, land listings, and verification proc
 ## 🛠️ Tech Stack
 
 - Frontend: React
-- Backend: Node.js, Express.js
-- Database: Superbase
-- Authentication: JWT / Session-based auth
+- Build Tool: Vite
+- Styling: CSS
+- Routing: React Router
+
+> Frontend-only repository. Future backend and data services will be added in a separate repo.
 
 ---
 
 ## 📁 Project Structure
 ```text
 root/
-├── public/              # Static assets (favicons,)
-├── src/                 # Main application source
-│   ├── assets/          # Images (ogo.png, icons etc)
-│   ├── Components/      # Reusable UI pieces
-|   |    ├── Admin/      AuthLayout component
-│   │    ├── AuthLayout.jsx        # SignIn and SignUp Layout util
-│   ├── Pages/           # Full page views
-|   |    ├──Admin/       #AdminSignIn, AdminDashBoard  page
-|   |    ├──Forms/       #SignIn ,SignUp ,OTP, Forget Password , Reset Password pages  
-|   ├── utils/           #GetGreetings.jsx
-│   ├── App.jsx          # Component tree
-│   └── main.jsx         # Entry point & Routing
-├── .gitignore           # Files to ignore in Git
-├── package.json         # Dependencies and scripts
-└── README.md            # 
+├── public/                  # Static public assets
+├── src/                     # Main application source
+│   ├── assets/              # Images and icon files
+│   ├── Components/          # Reusable UI components
+│   │   ├── Admin/
+│   │   │   ├── DashBoardLayout.jsx
+│   │   │   ├── DashBoardLayout.css
+│   │   │   ├── UploadEditForm.jsx
+│   │   │   └── UploadEditForm.css
+│   │   ├── AuthLayout.jsx
+│   │   ├── AuthLayout.css
+│   │   ├── DropDown.jsx
+│   │   ├── ListingCard.jsx
+│   │   └── ListingCard.css
+│   ├── Pages/
+│   │   ├── Admin/
+│   │   │   ├── AdminAssociatePage.jsx
+│   │   │   ├── AdminAssociatePage.css
+│   │   │   ├── AdminDashBoardPage.jsx
+│   │   │   ├── AdminDashBoardPage.css
+│   │   │   ├── AdminIntelligencePage.jsx
+│   │   │   ├── AdminIntelligencePage.css
+│   │   │   ├── AdminOpenDeals.jsx
+│   │   │   ├── AdminSettingsPage.jsx
+│   │   │   ├── AdminSettingsPage.css
+│   │   │   ├── AdminSignIn.jsx
+│   │   │   ├── AdminUploadListing.jsx
+│   │   │   └── AdminUploadListing.css
+│   │   └── Forms/
+│   │       ├── ConfirmOtp.jsx
+│   │       ├── ForgotPassword.jsx
+│   │       ├── OtpInput.jsx
+│   │       ├── OtpInput.css
+│   │       ├── ResetPassword.jsx
+│   │       ├── SignIn.jsx
+│   │       ├── SignUp.jsx
+│   │       └── Forms.css
+│   ├── utils/
+│   │   └── GetGreetings.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
+```
 
 ## installation & setup
 

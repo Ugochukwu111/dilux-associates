@@ -43,6 +43,11 @@ export  function DashBoardLayout({children,  isAdmin = false}) {
             <span className="text-muted d-block" >{isAdmin?'Administrator': 'Associate'}</span>
           </h1>
           {/* admin Navigation */}
+          {/*
+            We reuse the same layout for both admin and associate dashboards.
+            The `isAdmin` prop controls which nav links render, so the same wrapper
+            can support both roles without duplicating the layout structure.
+          */}
           { (isAdmin && <ul>
               <li>
               <NavLink 
