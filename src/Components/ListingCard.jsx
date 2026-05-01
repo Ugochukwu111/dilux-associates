@@ -1,4 +1,5 @@
 import { ArrowUpFromLine, Trash2, Pencil, MapPin } from "lucide-react";
+import ListingDocuments from "./ListingDocuments";
 
 import './ListingCard.css'
 
@@ -26,14 +27,7 @@ export default function ListingCard() {
                      </p>
                    </div>
                  </div>
-                 <div className=" flex gap-1 listing-documents-container">
-                   <span className="fs-small bg-success text-success-light">
-                     C of O
-                   </span>
-                   <span className="fs-small bg-success text-success-light">
-                     surveyed
-                   </span>
-                 </div>
+                 <ListingDocuments documents={["C of O", "surveyed"]} />
                  <div className=" flex gap-1 btn-container">
                    <button className="btn flex-1 bg-success-light text-success">
                      edit <Pencil size={15} />

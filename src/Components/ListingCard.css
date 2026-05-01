@@ -26,13 +26,6 @@
   overflow: hidden;
 }
 
-/* all children of  listing-documents-container*/
-.listing-card .listing-documents-container >*{
-  border: .5px solid var(--text-muted);
-  padding: .2em .5em;
-  border-radius: .3rem;
-}
-
 @media (max-width: 700px) {
   .listing-card{
     flex-direction: column;
