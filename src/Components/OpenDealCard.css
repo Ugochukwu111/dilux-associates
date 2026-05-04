@@ -1,0 +1,93 @@
+
+
+.short-description-container {
+  padding:.5em .8em;
+  border-radius:  .5rem;
+  border: 1px solid var(--text-muted);
+  transition: all 0.3s ease;
+  margin: .25em 0;
+}
+
+
+ .short-description-container figure {
+  min-width: 50px;
+  height: 50px;
+  border-radius: .5rem;
+  border: 2px solid var(--text-muted);
+
+}
+
+ .long-description-container {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+ .long-description-container.open {
+  max-height: 500px; /* big enough to fit content */
+  opacity: 1;
+}
+
+
+.property-name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+ .property-price {
+  font-size: .8rem;
+}
+
+
+ .follow-up-btn {
+  background: #25D366; 
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+ .follow-up-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+ .long-description-container .listing-card{
+  max-width: 100%;
+  border-radius: .5rem;
+  border:  1px solid transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 500px) {
+
+  .open-deals-card-container{
+  padding: .5em;
+  margin-top: 1.5em;
+}
+
+.short-description-container {
+  padding:.25em .5em;
+  border-radius:  .5rem;
+  transition: all 0.3s ease;
+}
+
+.short-description-container .action-group {
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: .5em;
+}
+
+ .action-group button, .open-deals-card-container .action-group a{
+  padding: .25em .7em;
+}
+
+ .long-description-container.open {
+  max-height: 600px; /* big enough to fit content */
+  opacity: 1;
+}
+  
+}
