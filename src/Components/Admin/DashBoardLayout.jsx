@@ -3,7 +3,6 @@ import { NavLink,Outlet  } from "react-router-dom";
 import { 
   LayoutDashboard,
   Crown,
-  ChevronDown,
   House,
   UserRoundCog,
   Brain,
@@ -185,7 +184,6 @@ export  function DashBoardLayout({children,  isAdmin = false}) {
               <span className="text-muted d-block">
                 {isAdmin?'Administrator': 'Associate'}
               </span>
-               <ChevronDown />
             </p>
           </button>
           </div>
