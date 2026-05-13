@@ -1,0 +1,88 @@
+.associate-data-card{
+  background-color: var(--color-primary);
+  max-width: 320px;
+  min-width: 300px;
+  border-radius: .5rem;
+  color: var(--text-primary);
+  padding: .5em 1em;
+  box-shadow: 2px 2px 2px var(--text-muted);
+  height: 120px;
+}
+
+.associate-header-text{
+    font-size: clamp(.8rem, 0.8rem + 1vw, 1.2rem);
+}
+
+
+.associate-data-card h3{
+  font-size: clamp(.8rem, 0.8rem + 1vw, 1.2rem);
+}
+
+.associate-data-card .total{
+  font-weight: 700;
+  font-size: clamp(1rem, 0.8rem + 1vw, 1.4rem);
+}
+
+.associate-data-card svg{
+  color: var(--text-inverse);
+}
+
+
+.associate-data-card .sub-total{
+   font-size: clamp(.6rem, 0.8rem + 1vw, .8rem);
+}
+
+.associate-data-card-wrapper{
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.associate-data-card-container {
+  min-width: 1000px;
+  padding: 1em ;
+}
+
+.table-container{
+  overflow-x: auto;
+    scrollbar-width: none;
+
+}
+
+.table-container table{
+  border-radius: .5rem;
+  min-width: 800px;
+}
+.table-container table thead {
+    border-radius: .5rem;
+
+}
+.table-container table thead th{
+  padding: .5em;
+}
+
+.table-container table tbody td{
+  padding: .25em ;
+  border: 1px solid var(--text-muted);
+}
+
+.table-container table .name-cell figure{
+   all: inset;
+   width: 50px;
+}
+
+
+.table-container table .verified{
+  border: 2px solid var(--text-muted);
+  padding: .25em .5em;
+  border-radius: .3rem;
+  font-weight: bolder;
+  color: var(--text-muted);
+}
+
+.box{
+    padding: 1em;
+    box-shadow: -2px -2px 2px var(--text-muted);
+    border: 1px solid var(--text-muted);
+    border-radius: .5rem;
+    background-color: var(--white);
+}
