@@ -4,6 +4,7 @@
   ====================== */
   --color-primary: #733939;      /* Dilux maroon */
   --color-secondary: #d3a23e;    /* Gold accent */
+  --color-light-primary: #7310101f; 
 
   /* ======================
      NEUTRAL SYSTEM
@@ -301,10 +302,6 @@ COMPONENTS UTILS
 
 
 
- .input-wrapper > div{
-  /* margin: .5em 0; */
-}
-
  .input-container{
   position: relative;
   display: grid;
@@ -322,6 +319,11 @@ COMPONENTS UTILS
 .input-wrapper label{
   font-size: .8rem;
   cursor: pointer;
+}
+
+ .input-container .errorMsg{
+  font-size: .7rem;
+  transition: all 200ms ease;
 }
 
  .input-wrapper input{
