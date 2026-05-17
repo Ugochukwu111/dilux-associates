@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpFromLine, Trash2, Pencil, MapPin,ArrowRight , CheckCheck} from "lucide-react";
+import { ArrowUpFromLine, Trash2, Pencil, MapPin,ArrowRight , CheckCheck,ContactRound } from "lucide-react";
 import ListingDocuments from "./ListingDocuments";
 
 import "./ListingCard.css";
@@ -18,6 +18,11 @@ export default function ListingCard({ isOpenDeal = false }) {
             cumque voluptate hic eveniet quidem quibusdam, dolorem quod, eaque
             non ad nesciunt!
           </p>
+         
+         {
+          isOpenDeal && <p className="flex items-center gap-1 fw700 text-muted"><ContactRound size={18}/> Mr Richard</p>
+         }
+
           <div className="flex items-center justify-between">
             <p className="text-secondary fw700">$20,000</p>
             <p className="text-muted fs-small text-end">
