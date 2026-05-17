@@ -85,6 +85,10 @@ body {
   min-height: 100svh;
 }
 
+button{
+  cursor: pointer;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -162,6 +166,7 @@ ul{list-style: none;}
 
 .justify-between { justify-content: space-between; }
 .justify-center { justify-content: center; }
+.justify-around { justify-content: space-around; }
 
 .gap-1 { gap: 0.5rem; }
 .gap-2 { gap: 1rem; }
