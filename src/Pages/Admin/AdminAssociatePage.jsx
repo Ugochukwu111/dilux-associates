@@ -9,6 +9,9 @@ import {
   BadgeCheck,
   RotateCcw,
   Ellipsis,
+  X,
+  UserCheck,
+  Trash,
 } from "lucide-react";
 import "./AdminAssociatePage.css";
 
@@ -37,15 +40,6 @@ export default function AdminAssociatePage() {
       backGroundColor: "#d2a800",
     },
     {
-      icon: <RotateCcw />,
-      label: "Recent Activity",
-      total: 50,
-      info1: "50%",
-      info2: "50%",
-      backGroundColor: "green",
-    },
-
-    {
       icon: <UserPen />,
       label: "Profile Completion",
       total: 25,
@@ -59,7 +53,7 @@ export default function AdminAssociatePage() {
     <section>
       <h2 className="associate-header-text text-end"> Associates</h2>
       <div className="associate-data-card-wrapper ">
-        <div className="flex gap-1 associate-data-card-container container ">
+        <div className="flex justify-center gap-1 associate-data-card-container container ">
           {associateAnalytics.map((analytics, index) => {
             return (
               <div
@@ -148,11 +142,46 @@ export default function AdminAssociatePage() {
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
         contentLabel="Example Modal"
-        className="modal"
+        className="modal p-relative flex flex-col justify-between"
         overlayClassName="overlay"
       >
-        <h2>Popup Content</h2>
-        <button onClick={() => setIsOpen(false)}>Close</button>
+        <div className="flex items-center associate-card">
+        <figure className="associate-profile-pic">
+          <img src={profileIcon} alt="associate" />
+        </figure>
+        <div>
+        <h4 className="text-secondary text-start">Lawrence smith</h4>
+        <p className="text-muted text-start"> {businessName} Associate</p>
+        </div>
+        </div>
+           <div className="flex justify-around stats-container gap-1">
+             <p className="flex flex-col text-center ">
+              <span className="fw700 text-red">Open Deals</span>
+               <span className="fw700 number ">0</span>
+             </p>
+
+               <p className="flex flex-col text-center">
+              <span className="fw700 text-secondary">closed Deals</span>
+               <span className="fw700 number">0</span>
+             </p>
+
+               <p className="flex flex-col text-center">
+              <span className="fw700 text-success">Referrals</span>
+               <span className="fw700 number">0</span>
+             </p>
+           </div>
+           <br />
+
+           <div className="referral-container flex justify-center items-center">
+            <h5 className="text-muted">Referral Tree comming soon</h5>
+           </div>
+           <br />
+
+           <div className=" flex gap-2">
+            <button className="btn flex-1 bg-success text-inverse"> < UserCheck size={17}/> verify</button>
+            <button className="btn flex-1 bg-danger text-inverse">Delete <Trash size={17} /></button>
+           </div>
+        <button className="text-muted close-pop-up-btn" onClick={() => setIsOpen(false)}><X/></button>
       </Modal>
     </section>
   );
